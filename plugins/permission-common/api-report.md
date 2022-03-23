@@ -16,6 +16,20 @@ export type AnyOfCriteria<TQuery> = {
 };
 
 // @public
+export type AuthorizePermissionRequest =
+  | {
+      permission: Exclude<Permission, ResourcePermission>;
+      resourceRef?: never;
+    }
+  | {
+      permission: ResourcePermission;
+      resourceRef: string;
+    };
+
+// @public
+export type AuthorizePermissionResponse = DefinitivePolicyDecision;
+
+// @public
 export type AuthorizeRequestOptions = {
   token?: string;
 };
@@ -77,6 +91,11 @@ export type EvaluatePermissionResponse = PolicyDecision;
 // @public
 export type EvaluatePermissionResponseBatch =
   PermissionMessageBatch<EvaluatePermissionResponse>;
+
+// @public
+export type EvaluatorRequestOptions = {
+  token?: string;
+};
 
 // @public
 export type IdentifiedPermissionMessage<T> = T & {
@@ -154,6 +173,18 @@ export type PermissionCriteria<TQuery> =
   | TQuery;
 
 // @public
+export interface PermissionEvaluator {
+  authorize(
+    requests: AuthorizePermissionRequest[],
+    options?: EvaluatorRequestOptions,
+  ): Promise<AuthorizePermissionResponse[]>;
+  query(
+    requests: QueryPermissionRequest[],
+    options?: EvaluatorRequestOptions,
+  ): Promise<QueryPermissionResponse[]>;
+}
+
+// @public
 export type PermissionMessageBatch<T> = {
   items: IdentifiedPermissionMessage<T>[];
 };
@@ -162,6 +193,15 @@ export type PermissionMessageBatch<T> = {
 export type PolicyDecision =
   | DefinitivePolicyDecision
   | ConditionalPolicyDecision;
+
+// @public
+export type QueryPermissionRequest = {
+  permission: ResourcePermission;
+  resourceRef?: never;
+};
+
+// @public
+export type QueryPermissionResponse = PolicyDecision;
 
 // @public
 export type ResourcePermission<TResourceType extends string = string> =
