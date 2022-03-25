@@ -76,7 +76,7 @@ export function createSubRoutesFromChildren(
  * @example
  * ```jsx
  * <TabbedLayout>
- *   <TabbedLayout.Route path="/example" title="Example tab">
+ *   <TabbedLayout.Route path="example" title="Example tab">
  *     <div>This is rendered under /example/anything-here route</div>
  *   </TabbedLayout.Route>
  * </TabbedLayout>

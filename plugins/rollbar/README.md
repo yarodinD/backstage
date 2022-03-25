@@ -23,7 +23,7 @@ import { EntityRollbarContent } from '@backstage/plugin-rollbar';
 const serviceEntityPage = (
   <EntityLayout>
     {/* other tabs... */}
-    <EntityLayout.Route path="/rollbar" title="Rollbar">
+    <EntityLayout.Route path="rollbar" title="Rollbar">
       <EntityRollbarContent />
     </EntityLayout.Route>
 ```

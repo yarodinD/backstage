@@ -24,7 +24,7 @@ import { EntityBitriseContent } from '@backstage/plugin-bitrise';
 const websiteEntityPage = (
   <EntityLayout>
     {/* Place the following section where you want the tab to appear */}
-    <EntityLayout.Route path="/bitrise" title="Bitrise">
+    <EntityLayout.Route path="bitrise" title="Bitrise">
       <EntityBitriseContent />
     </EntityLayout.Route>
 ```

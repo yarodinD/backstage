@@ -90,7 +90,7 @@ your plugin to the `systemPage`, you can add a new tab by adding an
 ```tsx
 const systemPage = (
   <EntityLayout>
-    <EntityLayout.Route path="/" title="Overview">
+    <EntityLayout.Route path="." title="Overview">
       <Grid container spacing={3} alignItems="stretch">
         <Grid item md={6}>
           <EntityAboutCard variant="gridItem" />
@@ -106,12 +106,12 @@ const systemPage = (
         </Grid>
       </Grid>
     </EntityLayout.Route>
-    <EntityLayout.Route path="/diagram" title="Diagram">
+    <EntityLayout.Route path="diagram" title="Diagram">
       <EntityCatalogGraphCard variant="gridItem" height={400} />
     </EntityLayout.Route>
 
     {/* Adding a new tab to the system view */}
-    <EntityLayout.Route path="/your-custom-route" title="CustomTitle">
+    <EntityLayout.Route path="your-custom-route" title="CustomTitle">
       <MyPluginEntityContent />
     </EntityLayout.Route>
   </EntityLayout>

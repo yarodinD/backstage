@@ -7,14 +7,14 @@ This code uses TypeScript, and the Markdown code fence to wrap the code.
 ```typescript
 const serviceEntityPage = (
   <EntityLayout>
-    <EntityLayout.Route path="/" title="Overview">
+    <EntityLayout.Route path="." title="Overview">
       <Grid container spacing={3} alignItems="stretch">
         <Grid item md={6}>
           <EntityAboutCard variant="gridItem" />
         </Grid>
       </Grid>
     </EntityLayout.Route>
-    <EntityLayout.Route path="/docs" title="Docs">
+    <EntityLayout.Route path="docs" title="Docs">
       <EntityTechdocsContent />
     </EntityLayout.Route>
   </EntityLayout>

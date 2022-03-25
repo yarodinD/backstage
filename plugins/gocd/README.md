@@ -19,7 +19,7 @@ import { EntityGoCdContent } from '@backstage/plugin-gocd';
 const componentEntityPage = (
   <EntityLayout>
     {/* Place the following section where you want the tab to appear */}
-    <EntityLayout.Route path="/go-cd" title="GoCD">
+    <EntityLayout.Route path="go-cd" title="GoCD">
       <EntityGoCdContent />
     </EntityLayout.Route>
 ```

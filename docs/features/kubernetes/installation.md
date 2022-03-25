@@ -35,7 +35,7 @@ import { EntityKubernetesContent } from '@backstage/plugin-kubernetes';
 const serviceEntityPage = (
   <EntityLayout>
     {/* other tabs... */}
-    <EntityLayout.Route path="/kubernetes" title="Kubernetes">
+    <EntityLayout.Route path="kubernetes" title="Kubernetes">
       <EntityKubernetesContent />
     </EntityLayout.Route>
 ```

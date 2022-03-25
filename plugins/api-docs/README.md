@@ -57,7 +57,7 @@ import {
 
 const apiPage = (
   <EntityLayout>
-    <EntityLayout.Route path="/" title="Overview">
+    <EntityLayout.Route path="." title="Overview">
       <Grid container spacing={3}>
         <Grid item xs={12} md={6}>
           <EntityAboutCard />
@@ -75,7 +75,7 @@ const apiPage = (
       </Grid>
     </EntityLayout.Route>
 
-    <EntityLayout.Route path="/definition" title="Definition">
+    <EntityLayout.Route path="definition" title="Definition">
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <EntityApiDefinitionCard />

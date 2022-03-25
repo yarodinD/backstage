@@ -33,10 +33,10 @@ const Wrapper = ({ children }: PropsWithChildren<{}>) => (
 export const Default = () => (
   <Wrapper>
     <TabbedLayout>
-      <TabbedLayout.Route path="/" title="tabbed-test-title">
+      <TabbedLayout.Route path="." title="tabbed-test-title">
         <div>tabbed-test-content</div>
       </TabbedLayout.Route>
-      <TabbedLayout.Route path="/some-other-path" title="tabbed-test-title-2">
+      <TabbedLayout.Route path="some-other-path" title="tabbed-test-title-2">
         <div>tabbed-test-content-2</div>
       </TabbedLayout.Route>
     </TabbedLayout>

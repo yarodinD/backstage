@@ -46,7 +46,7 @@ describe('<ExploreLayout />', () => {
     const { getByText } = await renderInTestApp(
       <Wrapper>
         <ExploreLayout>
-          <ExploreLayout.Route path="/tools" title="Tools">
+          <ExploreLayout.Route path="tools" title="Tools">
             <div>Tools Content</div>
           </ExploreLayout.Route>
         </ExploreLayout>
@@ -65,7 +65,7 @@ describe('<ExploreLayout />', () => {
     const { getByText } = await renderInTestApp(
       <Wrapper>
         <ExploreLayout title="Explore our universe">
-          <ExploreLayout.Route path="/tools" title="Tools">
+          <ExploreLayout.Route path="tools" title="Tools">
             <div>Tools Content</div>
           </ExploreLayout.Route>
         </ExploreLayout>
@@ -81,7 +81,7 @@ describe('<ExploreLayout />', () => {
     const { getByText } = await renderInTestApp(
       <Wrapper>
         <ExploreLayout subtitle="Browse the ACME Corp ecosystem">
-          <ExploreLayout.Route path="/tools" title="Tools">
+          <ExploreLayout.Route path="tools" title="Tools">
             <div>Tools Content</div>
           </ExploreLayout.Route>
         </ExploreLayout>
@@ -100,12 +100,12 @@ describe('<ExploreLayout />', () => {
       <Wrapper>
         <ExploreLayout subtitle="Browse the ACME Corp ecosystem">
           <FeatureFlagged with="test-flag">
-            <ExploreLayout.Route path="/tools" title="Tools">
+            <ExploreLayout.Route path="tools" title="Tools">
               <div>Tools Content</div>
             </ExploreLayout.Route>
           </FeatureFlagged>
           <FeatureFlagged without="test-flag">
-            <ExploreLayout.Route path="/tools-v2" title="Tools V2">
+            <ExploreLayout.Route path="tools-v2" title="Tools V2">
               <div>Tools V2 Content</div>
             </ExploreLayout.Route>
           </FeatureFlagged>
@@ -123,12 +123,12 @@ describe('<ExploreLayout />', () => {
       <Wrapper>
         <ExploreLayout subtitle="Browse the ACME Corp ecosystem">
           <FeatureFlagged with="test-flag">
-            <ExploreLayout.Route path="/tools" title="Tools">
+            <ExploreLayout.Route path="tools" title="Tools">
               <div>Tools Content</div>
             </ExploreLayout.Route>
           </FeatureFlagged>
           <FeatureFlagged without="test-flag">
-            <ExploreLayout.Route path="/tools-v2" title="Tools V2">
+            <ExploreLayout.Route path="tools-v2" title="Tools V2">
               <div>Tools V2 Content</div>
             </ExploreLayout.Route>
           </FeatureFlagged>

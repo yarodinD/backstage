@@ -27,14 +27,14 @@ import { EntityTechInsightsScorecardContent } from '@backstage/plugin-tech-insig
 
 const serviceEntityPage = (
   <EntityLayoutWrapper>
-    <EntityLayout.Route path="/" title="Overview">
+    <EntityLayout.Route path="." title="Overview">
       {overviewContent}
     </EntityLayout.Route>
-    <EntityLayout.Route path="/ci-cd" title="CI/CD">
+    <EntityLayout.Route path="ci-cd" title="CI/CD">
       {cicdContent}
     </EntityLayout.Route>
     ...
-    <EntityLayout.Route path="/tech-insights" title="Scorecards">
+    <EntityLayout.Route path="tech-insights" title="Scorecards">
       <EntityTechInsightsScorecardContent
         title="Customized title for the scorecard"
         description="Small description about scorecards"

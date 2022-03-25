@@ -34,7 +34,7 @@ import {
 // example here
 const serviceEntityPage = (
   <EntityLayout>
-    <EntityLayout.Route path="/" title="Overview">
+    <EntityLayout.Route path="." title="Overview">
       {/* ... */}
       <EntitySwitch>
         <EntitySwitch.Case if={isJenkinsAvailable}>
@@ -46,7 +46,7 @@ const serviceEntityPage = (
       </EntitySwitch>
     </EntityLayout.Route>
     {/* other tabs... */}
-    <EntityLayout.Route path="/ci-cd" title="CI/CD">
+    <EntityLayout.Route path="ci-cd" title="CI/CD">
       <EntitySwitch>
         <EntitySwitch.Case if={isJenkinsAvailable}>
           <EntityJenkinsContent />

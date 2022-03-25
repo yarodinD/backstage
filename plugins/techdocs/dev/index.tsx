@@ -143,13 +143,13 @@ createDevApp()
       <Page themeId="home">
         <Header title="TechDocs" />
         <TabbedLayout>
-          <TabbedLayout.Route path="/fresh" title="Fresh">
+          <TabbedLayout.Route path="fresh" title="Fresh">
             {createPage({
               syncDocs: () => 'cached',
             })}
           </TabbedLayout.Route>
 
-          <TabbedLayout.Route path="/stale" title="Stale">
+          <TabbedLayout.Route path="stale" title="Stale">
             {createPage({
               entityDocs: ({ called, content }) => {
                 return called === 0
@@ -161,7 +161,7 @@ createDevApp()
             })}
           </TabbedLayout.Route>
 
-          <TabbedLayout.Route path="/initial" title="Initial Build">
+          <TabbedLayout.Route path="initial" title="Initial Build">
             {createPage({
               entityDocs: ({ called, content }) => {
                 if (called < 1) {
@@ -175,7 +175,7 @@ createDevApp()
             })}
           </TabbedLayout.Route>
 
-          <TabbedLayout.Route path="/not-found" title="Not Found">
+          <TabbedLayout.Route path="not-found" title="Not Found">
             {createPage({
               entityDocs: () => {
                 throw new NotFoundError('Not found, some error message...');
@@ -184,7 +184,7 @@ createDevApp()
             })}
           </TabbedLayout.Route>
 
-          <TabbedLayout.Route path="/error" title="Error">
+          <TabbedLayout.Route path="error" title="Error">
             {createPage({
               entityDocs: () => {
                 throw new Error('Another more critical error');
@@ -193,7 +193,7 @@ createDevApp()
             })}
           </TabbedLayout.Route>
 
-          <TabbedLayout.Route path="/serror" title="Sync Error">
+          <TabbedLayout.Route path="serror" title="Sync Error">
             {createPage({
               syncDocs: () => {
                 throw new Error('Some random error');
@@ -202,7 +202,7 @@ createDevApp()
             })}
           </TabbedLayout.Route>
 
-          <TabbedLayout.Route path="/berror" title="Both Error">
+          <TabbedLayout.Route path="berror" title="Both Error">
             {createPage({
               entityDocs: () => {
                 throw new Error('Some random error');

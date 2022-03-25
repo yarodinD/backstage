@@ -27,7 +27,7 @@ The Airbrake plugin provides connectivity between Backstage and Airbrake (https:
 
    const serviceEntityPage = (
      <EntityLayoutWrapper>
-       <EntityLayout.Route path="/airbrake" title="Airbrake">
+       <EntityLayout.Route path="airbrake" title="Airbrake">
          <EntityAirbrakeContent />
        </EntityLayout.Route>
      </EntityLayoutWrapper>
@@ -35,7 +35,7 @@ The Airbrake plugin provides connectivity between Backstage and Airbrake (https:
 
    const websiteEntityPage = (
      <EntityLayoutWrapper>
-       <EntityLayout.Route path="/airbrake" title="Airbrake">
+       <EntityLayout.Route path="airbrake" title="Airbrake">
          <EntityAirbrakeContent />
        </EntityLayout.Route>
      </EntityLayoutWrapper>
@@ -43,7 +43,7 @@ The Airbrake plugin provides connectivity between Backstage and Airbrake (https:
 
    const defaultEntityPage = (
      <EntityLayoutWrapper>
-       <EntityLayout.Route path="/airbrake" title="Airbrake">
+       <EntityLayout.Route path="airbrake" title="Airbrake">
          <EntityAirbrakeContent />
        </EntityLayout.Route>
      </EntityLayoutWrapper>

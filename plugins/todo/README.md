@@ -69,7 +69,7 @@ import { EntityTodoContent } from '@backstage/plugin-todo';
 const serviceEntityPage = (
   <EntityLayout>
     {/* other tabs... */}
-    <EntityLayout.Route path="/todo" title="Todo">
+    <EntityLayout.Route path="todo" title="Todo">
       <EntityTodoContent />
     </EntityLayout.Route>
 ```

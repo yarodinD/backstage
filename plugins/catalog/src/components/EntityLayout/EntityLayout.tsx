@@ -163,7 +163,7 @@ export interface EntityLayoutProps {
  * @example
  * ```jsx
  * <EntityLayout>
- *   <EntityLayout.Route path="/example" title="Example tab">
+ *   <EntityLayout.Route path="example" title="Example tab">
  *     <div>This is rendered under /example/anything-here route</div>
  *   </EntityLayout.Route>
  * </EntityLayout>

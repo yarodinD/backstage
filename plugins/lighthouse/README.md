@@ -78,7 +78,7 @@ import { EntityLighthouseContent } from '@backstage/plugin-lighthouse';
 const websiteEntityPage = (
   <EntityLayout>
     {/* other tabs... */}
-    <EntityLayout.Route path="/lighthouse" title="Lighthouse">
+    <EntityLayout.Route path="lighthouse" title="Lighthouse">
       <EntityLighthouseContent />
     </EntityLayout.Route>
 ```

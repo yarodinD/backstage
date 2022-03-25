@@ -57,7 +57,7 @@ describe('EntityLayout', () => {
       <ApiProvider apis={mockApis}>
         <EntityProvider entity={mockEntity}>
           <EntityLayout>
-            <EntityLayout.Route path="/" title="tabbed-test-title">
+            <EntityLayout.Route path="." title="tabbed-test-title">
               <div>tabbed-test-content</div>
             </EntityLayout.Route>
           </EntityLayout>
@@ -88,7 +88,7 @@ describe('EntityLayout', () => {
       <ApiProvider apis={mockApis}>
         <EntityProvider entity={mockEntityWithTitle}>
           <EntityLayout>
-            <EntityLayout.Route path="/" title="tabbed-test-title">
+            <EntityLayout.Route path="." title="tabbed-test-title">
               <div>tabbed-test-content</div>
             </EntityLayout.Route>
           </EntityLayout>
@@ -111,7 +111,7 @@ describe('EntityLayout', () => {
       <ApiProvider apis={mockApis}>
         <AsyncEntityProvider loading={false}>
           <EntityLayout>
-            <EntityLayout.Route path="/" title="tabbed-test-title">
+            <EntityLayout.Route path="." title="tabbed-test-title">
               <div>tabbed-test-content</div>
             </EntityLayout.Route>
           </EntityLayout>
@@ -139,7 +139,7 @@ describe('EntityLayout', () => {
             <ApiProvider apis={mockApis}>
               <EntityProvider entity={mockEntity}>
                 <EntityLayout>
-                  <EntityLayout.Route path="/" title="tabbed-test-title">
+                  <EntityLayout.Route path="." title="tabbed-test-title">
                     <div>tabbed-test-content</div>
                   </EntityLayout.Route>
                   <EntityLayout.Route
@@ -181,7 +181,7 @@ describe('EntityLayout', () => {
       <ApiProvider apis={mockApis}>
         <EntityProvider entity={mockEntity}>
           <EntityLayout>
-            <EntityLayout.Route path="/" title="tabbed-test-title">
+            <EntityLayout.Route path="." title="tabbed-test-title">
               <div>tabbed-test-content</div>
             </EntityLayout.Route>
             <EntityLayout.Route

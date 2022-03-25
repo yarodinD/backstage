@@ -23,7 +23,7 @@ describe('TabbedLayout', () => {
   it('renders simplest case', async () => {
     const { getByText } = await renderInTestApp(
       <TabbedLayout>
-        <TabbedLayout.Route path="/" title="tabbed-test-title">
+        <TabbedLayout.Route path="." title="tabbed-test-title">
           <div>tabbed-test-content</div>
         </TabbedLayout.Route>
       </TabbedLayout>,
@@ -38,7 +38,7 @@ describe('TabbedLayout', () => {
       await expect(
         renderInTestApp(
           <TabbedLayout>
-            <TabbedLayout.Route path="/" title="tabbed-test-title">
+            <TabbedLayout.Route path="." title="tabbed-test-title">
               <div>tabbed-test-content</div>
             </TabbedLayout.Route>
             <div>This will cause app to throw</div>
@@ -64,7 +64,7 @@ describe('TabbedLayout', () => {
           path="/*"
           element={
             <TabbedLayout>
-              <TabbedLayout.Route path="/" title="tabbed-test-title">
+              <TabbedLayout.Route path="." title="tabbed-test-title">
                 <div>tabbed-test-content</div>
               </TabbedLayout.Route>
               <TabbedLayout.Route

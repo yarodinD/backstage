@@ -53,7 +53,7 @@ import { EntityKafkaContent } from '@backstage/plugin-kafka';
 const serviceEntityPage = (
   <EntityLayout>
     {/* other tabs... */}
-    <EntityLayout.Route path="/kafka" title="Kafka">
+    <EntityLayout.Route path="kafka" title="Kafka">
       <EntityKafkaContent />
     </EntityLayout.Route>
 ```

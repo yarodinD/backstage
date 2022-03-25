@@ -57,7 +57,7 @@ import {
 const serviceEntityPage = (
   <EntityLayout>
     {/* other tabs... */}
-    <EntityLayout.Route path="/github-actions" title="GitHub Actions">
+    <EntityLayout.Route path="github-actions" title="GitHub Actions">
       <EntityGithubActionsContent />
     </EntityLayout.Route>
 ```

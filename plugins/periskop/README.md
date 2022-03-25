@@ -32,7 +32,7 @@ import { EntityPeriskopErrorsCard } from '@backstage/plugin-periskop';
 const componentPage = (
   <EntityLayout>
     {/* other tabs... */}
-    <EntityLayout.Route path="/periskop" title="Periskop">
+    <EntityLayout.Route path="periskop" title="Periskop">
       <Grid container spacing={3} alignItems="stretch">
         <Grid item xs={12} sm={12} md={12}>
           <EntityPeriskopErrorsCard />
@@ -54,7 +54,7 @@ annotations:
 
 ### Instances
 
-The periskop plugin can be configured to fetch aggregated errors from multiple deployment instances.  
+The periskop plugin can be configured to fetch aggregated errors from multiple deployment instances.
 This is especially useful if you have a multi-zone deployment, or a federated setup and would like to drill deeper into a single instance of the federation. Each of the configured instances will be included in the plugin's UI via a dropdown on the errors table.
 
 The plugin requires to configure _at least one_ Periskop API location in the [app-config.yaml](https://github.com/backstage/backstage/blob/master/app-config.yaml):

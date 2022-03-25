@@ -39,7 +39,7 @@ Add `EntityAllureReportContent` in the `EntityPage.tsx` like below:
 const serviceEntityPage = (
   <EntityLayoutWrapper>
     ...
-+    <EntityLayout.Route path="/allure" title="Allure Report">
++    <EntityLayout.Route path="allure" title="Allure Report">
 +        <EntityAllureReportContent />
 +    </EntityLayout.Route>
   </EntityLayoutWrapper>

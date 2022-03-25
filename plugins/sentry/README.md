@@ -42,7 +42,7 @@ const overviewContent = (
 > const serviceEntityPage = (
 >   <EntityLayout>
 >     // ...
->     <EntityLayout.Route path="/sentry" title="Sentry">
+>     <EntityLayout.Route path="sentry" title="Sentry">
 >       <EntitySentryContent />
 >     </EntityLayout.Route>
 >     // ...

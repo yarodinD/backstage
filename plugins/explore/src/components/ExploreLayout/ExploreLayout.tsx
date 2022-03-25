@@ -52,7 +52,7 @@ type ExploreLayoutProps = {
  * @example
  * ```jsx
  * <ExploreLayout title="Explore ACME's ecosystem">
- *   <ExploreLayout.Route path="/example" title="Example tab">
+ *   <ExploreLayout.Route path="example" title="Example tab">
  *     <div>This is rendered under /example/anything-here route</div>
  *   </ExploreLayout.Route>
  * </ExploreLayout>

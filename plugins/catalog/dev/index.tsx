@@ -35,7 +35,7 @@ createDevApp()
     element: <CatalogEntityPage />,
     children: (
       <EntityLayout>
-        <EntityLayout.Route path="/" title="Overview">
+        <EntityLayout.Route path="." title="Overview">
           <h1>Overview</h1>
         </EntityLayout.Route>
       </EntityLayout>

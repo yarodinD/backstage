@@ -104,15 +104,15 @@ The last step is to wrap all the entity pages in the `EntityLayoutWrapper` like 
 ```diff
 const defaultEntityPage = (
 +  <EntityLayoutWrapper>
-    <EntityLayout.Route path="/" title="Overview">
+    <EntityLayout.Route path="." title="Overview">
       {overviewContent}
     </EntityLayout.Route>
 
-    <EntityLayout.Route path="/docs" title="Docs">
+    <EntityLayout.Route path="docs" title="Docs">
       <EntityTechdocsContent />
     </EntityLayout.Route>
 
-    <EntityLayout.Route path="/todos" title="TODOs">
+    <EntityLayout.Route path="todos" title="TODOs">
       <EntityTodoContent />
     </EntityLayout.Route>
 +  </EntityLayoutWrapper>
