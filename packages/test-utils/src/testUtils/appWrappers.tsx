@@ -15,7 +15,7 @@
  */
 
 import React, { ComponentType, ReactNode, ReactElement } from 'react';
-import { MemoryRouter } from 'react-router';
+import { MemoryRouter, Routes } from 'react-router';
 import { Route } from 'react-router-dom';
 import { lightTheme } from '@backstage/theme';
 import { ThemeProvider } from '@material-ui/core/styles';
@@ -190,10 +190,12 @@ export function wrapInTestApp(
   return (
     <AppProvider>
       <AppRouter>
-        {routeElements}
-        {/* The path of * here is needed to be set as a catch all, so it will render the wrapper element
-         *  and work with nested routes if they exist too */}
-        <Route path="*" element={wrappedElement} />
+        <Routes>
+          {routeElements}
+          {/* The path of * here is needed to be set as a catch all, so it will render the wrapper element
+           *  and work with nested routes if they exist too */}
+          <Route path="*" element={wrappedElement} />
+        </Routes>
       </AppRouter>
     </AppProvider>
   );
