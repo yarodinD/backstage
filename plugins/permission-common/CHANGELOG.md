@@ -1,5 +1,26 @@
 # @backstage/plugin-permission-common
 
+## 0.6.0-next.0
+
+### Minor Changes
+
+- c98d271466: Refactor api types into more specific, decoupled names.
+
+  - **BREAKING:**
+    - Renamed `AuthorizeDecision` to `EvaluatePermissionResponse`
+    - Renamed `AuthorizeQuery` to `EvaluatePermissionRequest`
+    - Renamed `AuthorizeRequest` to `EvaluatePermissionRequestBatch`
+    - Renamed `AuthorizeResponse` to `EvaluatePermissionResponseBatch`
+    - Renamed `Identified` to `IdentifiedPermissionMessage`
+  - Add `PermissionMessageBatch` helper type
+  - Add `ConditionalPolicyDecision`, `DefinitivePolicyDecision`, and `PolicyDecision` types from `@backstage/plugin-permission-node`
+
+### Patch Changes
+
+- 95284162d6: - Add more specific `Permission` types.
+  - Add `createPermission` helper to infer the appropriate type for some permission input.
+  - Add `isResourcePermission` helper to refine Permissions to ResourcePermissions.
+
 ## 0.5.3
 
 ### Patch Changes

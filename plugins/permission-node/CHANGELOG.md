@@ -1,5 +1,20 @@
 # @backstage/plugin-permission-node
 
+## 0.6.0-next.1
+
+### Minor Changes
+
+- c98d271466: **BREAKING:**
+
+  - Rename `PolicyAuthorizeQuery` to `PolicyQuery`
+  - Remove `PolicyDecision`, `DefinitivePolicyDecision`, and `ConditionalPolicyDecision`. These types are now exported from `@backstage/plugin-permission-common`
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/plugin-permission-common@0.6.0-next.0
+  - @backstage/backend-common@0.13.2-next.1
+
 ## 0.5.6-next.0
 
 ### Patch Changes
